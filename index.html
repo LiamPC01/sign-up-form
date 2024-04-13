@@ -39,40 +39,44 @@
 
             <form action="/my-handling-form-page" method="post">
                 <fieldset id="sign-up-fieldset">
+                    <p><b>Lets Do This!</b></p>
                     <ul id="sign-up-form">
                         <li>
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="user-first-name">
+                            <input type="text" id="first-name" name="first-name">
                         </li>
                         <li>
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="user-first-name">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </li>
+
+                        <li>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
                         </li>
 
                         <li>
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="user-first-name">
-                        </li>
-                        <li>
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="user-first-name">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="number" id="phone-number" name="phone-number" min="7" max="999999999999999">
                         </li>
 
 
                         <li>
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="user-first-name">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password">
                         </li>
                         <li>
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="user-first-name">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="confirm-password">
                         </li>
                     </ul>
                 </fieldset>
+                <button type="submit" id="create-account-btn"><b>Create Account</b></button>
+
             </form>
 
 
-            <button id="create-account-btn"><b>Create Account</b></button>
+
             <p>Already have an account? <b>Log in</b></p>
         </div>
     </div>

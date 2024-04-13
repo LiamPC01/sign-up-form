@@ -48,15 +48,15 @@ div {
     padding-top: 0px;
     padding-bottom: 0px;
     margin: 0px;
-    
-   
+
+
 }
 
 #right-content {
     width: 100%;
     background-color: rgb(236, 236, 236);
     padding: 0px;
-    padding-right: 150px;
+    /* padding-right: 150px; */
     padding-top: 100px;
     margin: 0px;
     font-size: x-large;
@@ -78,8 +78,8 @@ h1 {
     height: 40px;
     color: white;
     font-size: large;
-    
-    margin-top: 30px ;
+
+    margin-top: 30px;
 }
 
 
@@ -88,6 +88,9 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    padding-left: 50px;
+    padding-bottom: 10px;
+
 }
 
 #sign-up-form li {
@@ -98,13 +101,42 @@ h1 {
     margin-left: 0px;
     padding-right: 75px;
 
-    /* padding: 15px; */
+    padding-bottom: 20px;
 }
 
 #sign-up-fieldset {
     background-color: white;
     border: none;
+    padding: 0px;
 
 }
 
+#right-content p {
+    padding-left: 50px;
+    padding-right: 150px;
+}
 
+#right-content button {
+    margin-left: 50px;
+
+}
+
+label {
+    color: rgb(78, 78, 78);
+    font-size: medium;
+    font-weight: bold;
+}
+
+input {
+    height: 20px;
+    width: 200px;
+    border-color: #E5E7EB;
+}
+
+input:focus{
+    outline-color: blue;
+}
+
+input:invalid {
+    outline-color: red;
+}
