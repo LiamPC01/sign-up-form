@@ -1,23 +1,19 @@
 @font-face {
-    font-family: 'heavy-heap';
-    src: url('./media/heavy\ heap\ rg.otf');
+    font-family: 'seagram';
+    src: url('./media/Seagram\ tfb.ttf');
 }
 
 body {
 
     margin: 0;
     padding: 0;
-
-}
+    font-family: 'Courier New', Courier, monospace;
+    }
 
 #main {
     display: flex;
     height: 100vh;
     width: 100vw;
-}
-
-div {
-    /* border: solid red 2px; */
 }
 
 #left-title {
@@ -27,13 +23,9 @@ div {
     justify-content: space-between;
     align-items: center;
     padding-top: 200px;
-    /* padding-left: 100px; */
-    /* padding-right: 100px; */
 
-    /* width: 50%; */
-
-    background-image: url(./media/wetleaf.jpg);
-    background-color: green;
+    background-image: url(./media/building.jpg);
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -42,7 +34,6 @@ div {
 
 #title-container {
     background-color: rgba(0, 0, 0, 0.75);
-    /* width: 750px; */
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 0px;
@@ -53,32 +44,30 @@ div {
 }
 
 #right-content {
+    color: white;
     width: 100%;
-    background-color: rgb(236, 236, 236);
+    background-color: #1e1c1c;
     padding: 0px;
-    /* padding-right: 150px; */
     padding-top: 100px;
     margin: 0px;
     font-size: x-large;
 }
 
 h1 {
-    /* border: solid blue 2px; */
-    font-family: 'heavy-heap';
+    font-family: 'seagram';
     font-size: 10em;
     padding: 0px;
     margin: 0px;
 }
 
 #create-account-btn {
-    background-color: #596D48;
-    border: solid #596D48 2px;
+    background-color: rgb(65, 65, 65);
+    border: solid rgb(65, 65, 65) 2px;
     border-radius: 4px;
     width: 200px;
     height: 40px;
     color: white;
     font-size: large;
-
     margin-top: 30px;
 }
 
@@ -96,19 +85,16 @@ h1 {
 #sign-up-form li {
     display: flex;
     flex-direction: column;
-    /* border: solid black 2px; */
     padding: 0px;
     margin-left: 0px;
     padding-right: 75px;
-
     padding-bottom: 20px;
 }
 
 #sign-up-fieldset {
-    background-color: white;
+    background-color: #212121;
     border: none;
     padding: 0px;
-
 }
 
 #right-content p {
@@ -122,7 +108,7 @@ h1 {
 }
 
 label {
-    color: rgb(78, 78, 78);
+    color: white;
     font-size: medium;
     font-weight: bold;
 }
@@ -130,23 +116,17 @@ label {
 input {
     height: 20px;
     width: 200px;
-    border-color: #E5E7EB;
-}
-
-input:invalid {
-    outline-color: red;
+    background-color: #212121;
+    border-width: 0 0 2px;
+    color: white;
 }
 
 input:focus{
-    outline-color: blue;
+    border-width: 0 0 4px;
 }
 
-
-input:invalid input:focus{
-    outline-color: red;
-}
-
-input:valid {
-    outline-color: green;
+a {
+    color: inherit;
+    
 }
 
