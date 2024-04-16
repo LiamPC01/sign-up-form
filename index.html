@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="source.js"></script>
 </head>
 
 <body>
@@ -36,38 +37,38 @@
                     In the Land of Mordor where the Shadows lie. </b></p>
             <p><b>do it sign up now!</b></p>
 
-
-            <form action="/my-handling-form-page" method="post">
+            <!-- action="/my-handling-form-page" method="post" -->
+            <form method="post">
                 <fieldset id="sign-up-fieldset">
                     <p><b>Lets Do This!</b></p>
                     <ul id="sign-up-form">
                         <li>
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name">
+                            <input type="text" id="first-name" name="first-name" required>
                         </li>
                         <li>
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name">
+                            <input type="text" id="last-name" name="last-name" required>
                         </li>
 
                         <li>
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" required>
                         </li>
 
                         <li>
                             <label for="phone-number">PHONE NUMBER</label>
-                            <input type="number" id="phone-number" name="phone-number" min="7" max="999999999999999">
+                            <input type="number" id="phone-number" name="phone-number" min="7" max="999999999999999" required>
                         </li>
 
 
                         <li>
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" required>
                         </li>
                         <li>
-                            <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" name="confirm-password">
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input oninput="return checkPassword(this)" type="password" id="confirmPassword" name="confirmPassword" required>
                         </li>
                     </ul>
                 </fieldset>

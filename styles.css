@@ -133,10 +133,20 @@ input {
     border-color: #E5E7EB;
 }
 
+input:invalid {
+    outline-color: red;
+}
+
 input:focus{
     outline-color: blue;
 }
 
-input:invalid {
+
+input:invalid input:focus{
     outline-color: red;
 }
+
+input:valid {
+    outline-color: green;
+}
+
